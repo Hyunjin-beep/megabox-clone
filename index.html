@@ -3,21 +3,126 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <script
+      src="https://kit.fontawesome.com/df74e34b8e.js"
+      crossorigin="anonymous"
+    ></script>
     <title>MEGABOX - LIFE THEATER</title>
-
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <header class="movie-menu"></header>
+    <header class="movie-menu">
+      <ul class="left-list">
+        <li class="left-list-item vip">VIP LOUNGE</li>
+        <li class="left-list-item membership">MEMBERSHIP</li>
+        <li class="left-list-item customerCenter">CUSTOMER CENTER</li>
+      </ul>
+
+      <h1 class="logo">
+        <img src="img/megabox-logo.png" alt="megabox-logo" />
+      </h1>
+
+      <ul class="right-list">
+        <li class="right-list-item signIn">SIGN IN</li>
+        <li class="right-list-item signUp">SIGN UP</li>
+        <li class="right-list-item buyTicket">Go Booking</li>
+      </ul>
+
+      <ul class="left-nav">
+        <li class="left-nav-item bars"><i class="fas fa-bars"></i></li>
+        <li class="left-nav-item search"><i class="fas fa-search"></i></li>
+        <li class="left-nav-item movies">MOVIES</li>
+        <li class="left-nav-item booking">BOOKING</li>
+        <li class="left-nav-item theather">THEATHER</li>
+      </ul>
+
+      <ul class="right-nav">
+        <li class="right-nav-item events">EVENTS</li>
+        <li class="right-nav-item store">STORE</li>
+        <li class="right-nav-item services">SERVICES</li>
+        <li class="right-nav-item calendar">
+          <i class="far fa-calendar-alt"></i>
+        </li>
+        <li class="right-nav-item user"><i class="fas fa-user"></i></li>
+      </ul>
+    </header>
 
     <div class="movie-contents">
-      <div class="movie-infor"></div>
+      <div class="movie-infor">
+        <div class="upper">
+          <span class="boxOffice">BOXOFFICE</span>
+          <span class="moreMovies"
+            >See More Movies<i class="fas fa-plus"></i
+          ></span>
+        </div>
+
+        <ul class="top-movies">
+          <li class="top-movie">
+            <div class="top-movie-img">
+              <img src="img/movie-mogadishu.jpg" alt="" />
+            </div>
+            <div class="top-movie-infor">
+              <span class="like">
+                <i class="far fa-heart"></i><i class="fas fa-heart"></i>493
+              </span>
+              <span class="book">BOOK</span>
+            </div>
+          </li>
+
+          <li class="top-movie">
+            <div class="top-movie-img">
+              <img src="img/boss-baby.jpg" alt="" />
+            </div>
+            <div class="top-movie-infor">
+              <span class="like">
+                <i class="far fa-heart"></i><i class="fas fa-heart"></i>608
+              </span>
+              <span class="book">BOOK</span>
+            </div>
+          </li>
+
+          <li class="top-movie">
+            <div class="top-movie-img">
+              <img src="img/suicide-squad.jpg" alt="" />
+            </div>
+            <div class="top-movie-infor">
+              <span class="like">
+                <i class="far fa-heart"></i><i class="fas fa-heart"></i>427
+              </span>
+              <span class="book">BOOK</span>
+            </div>
+          </li>
+
+          <li class="top-movie">
+            <div class="top-movie-img">
+              <img src="img/jungle-cruise.jpg" alt="" />
+            </div>
+            <div class="top-movie-infor">
+              <span class="like">
+                <i class="far fa-heart"></i><i class="fas fa-heart"></i>446
+              </span>
+              <span class="book">BOOK</span>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="bookingHelp">
+          <li class="bookingHelp">
+            <input type="text" placeholder="Enter the movie title" />
+            <i class="fas fa-search"></i>
+          </li>
+          <li class="bookingHelp">
+            <i class="far fa-calendar-alt"></i> Time Table
+          </li>
+          <li class="bookingHelp"><i class="fas fa-film"></i>Box Office</li>
+          <li class="bookingHelp">
+            <i class="fas fa-ticket-alt"></i>Go Booking
+          </li>
+        </ul>
+      </div>
 
       <div class="movie-service"></div>
 
