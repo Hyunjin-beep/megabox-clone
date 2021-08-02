@@ -15,48 +15,128 @@
 
   <body>
     <header class="movie-menu">
-      <ul class="left-list">
+      <nav class="left-list">
+        <a href="#">VIP LOUNGE</a>
+        <a href="#">멤버십</a>
+        <a href="#">고객센터</a>
+      </nav>
+      <!-- <ul class="left-list">
         <li class="left-list-item vip">VIP LOUNGE</li>
         <li class="left-list-item membership">MEMBERSHIP</li>
         <li class="left-list-item customerCenter">CUSTOMER CENTER</li>
-      </ul>
+      </ul> -->
 
       <h1 class="logo">
         <img src="img/megabox-logo.png" alt="megabox-logo" />
       </h1>
 
-      <ul class="right-list">
+      <nav class="right-list">
+        <a href="#">로그인</a>
+        <a href="#">회원가입</a>
+        <a href="#">빠른 예매</a>
+      </nav>
+      <!-- 
+      <ul class="right-list">ㅣ
         <li class="right-list-item signIn">SIGN IN</li>
         <li class="right-list-item signUp">SIGN UP</li>
         <li class="right-list-item buyTicket">Go Booking</li>
-      </ul>
+      </ul> -->
 
-      <ul class="left-nav">
-        <li class="left-nav-item bars"><i class="fas fa-bars"></i></li>
-        <li class="left-nav-item search"><i class="fas fa-search"></i></li>
-        <li class="left-nav-item movies">MOVIES</li>
-        <li class="left-nav-item booking">BOOKING</li>
-        <li class="left-nav-item theather">THEATHER</li>
-      </ul>
+      <nav class="left-nav">
+        <ul class="left-nav-ul">
+          <li class="left-nav-item bars">
+            <a href="#"><i class="fas fa-bars"></i></a>
+          </li>
 
-      <ul class="right-nav">
-        <li class="right-nav-item events">EVENTS</li>
-        <li class="right-nav-item store">STORE</li>
-        <li class="right-nav-item services">SERVICES</li>
-        <li class="right-nav-item calendar">
-          <i class="far fa-calendar-alt"></i>
-        </li>
-        <li class="right-nav-item user"><i class="fas fa-user"></i></li>
-      </ul>
+          <li class="left-nav-item search">
+            <a href="#"><i class="fas fa-search"></i></a>
+          </li>
+
+          <li class="left-nav-item movies">
+            <a href="#">영화</a>
+            <div class="left-nav-item-movies-wrapper">
+              <ul class="movies__movie">
+                <li><a href="#">전체영화</a></li>
+                <li><a href="#">N스크린</a></li>
+                <li><a href="#">큐레이션</a></li>
+                <li><a href="#">무비포스트</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="left-nav-item booking">
+            <a href="#">예매</a>
+            <div class="left-nav-item-booking-wrapper">
+              <ul class="bookings__booking">
+                <li><a href="#">빠른예매</a></li>
+                <li><a href="#">상영시간표</a></li>
+                <li><a href="#">더 부티크 프라이빗 예매</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="left-nav-item theather">
+            <a href="#">극장</a>
+            <div class="left-nav-item-theather-wrapper">
+              <ul class="theathers_theather">
+                <li><a href="#">전체극장</a></li>
+                <li><a href="#">특별관</a></li>
+              </ul>
+            </div>
+          </li>
+          <!-- <p><i class="fas fa-bars"></i></p>
+          <p><i class="fas fa-search"></i></p>
+          <a href="#" class="left-nav-item movies">영화</a>
+          <a href="#" class="left-nav-item booking">예매</a>
+          <a href="#" class="left-nav-item theather">극장</a> -->
+        </ul>
+      </nav>
+
+      <nav class="right-nav">
+        <ul class="right-nav-ul">
+          <li class="right-nav-item events">
+            <a href="#">이벤트</a>
+            <div class="right-nav-item-events-wrapper">
+              <ul class="events__event">
+                <li><a href="#">진행중 이벤트</a></li>
+                <li><a href="#">지난 이벤트</a></li>
+                <li><a href="#">당첨자발표</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="right-nav-item store">
+            <a href="#">스토어</a>
+          </li>
+
+          <li class="right-nav-item services">
+            <a href="#">혜택</a>
+            <div class="right-nav-item-services-wrapper">
+              <ul class="services__service">
+                <li><a href="#">메가박스 멤버십</a></li>
+                <li><a href="#">제휴/할인</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="right-nav-item calendar">
+            <a href="#"><i class="far fa-calendar-alt"></i></a>
+          </li>
+
+          <li class="right-nav-item user">
+            <a href="#"><i class="fas fa-user"></i></a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <div class="movie-contents">
       <div class="movie-infor">
         <div class="upper">
-          <span class="boxOffice">BOXOFFICE</span>
-          <span class="moreMovies"
-            >See More Movies<i class="fas fa-plus"></i
-          ></span>
+          <a href="#" class="boxOffice">박스오피스</a>
+          <a href="#" class="moreMovies">
+            더 많은 영화보기<i class="fas fa-plus"></i>
+          </a>
         </div>
 
         <ul class="top-movies">
@@ -65,10 +145,12 @@
               <img src="img/movie-mogadishu.jpg" alt="" />
             </div>
             <div class="top-movie-infor">
-              <span class="like">
-                <i class="far fa-heart"></i><i class="fas fa-heart"></i>493
-              </span>
-              <span class="book">BOOK</span>
+              <a href="#" class="like">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                493
+              </a>
+              <a href="#" class="book">예매</a>
             </div>
           </li>
 
@@ -77,10 +159,12 @@
               <img src="img/boss-baby.jpg" alt="" />
             </div>
             <div class="top-movie-infor">
-              <span class="like">
-                <i class="far fa-heart"></i><i class="fas fa-heart"></i>608
-              </span>
-              <span class="book">BOOK</span>
+              <a href="#" class="like">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                608
+              </a>
+              <a href="#" class="book">예매</a>
             </div>
           </li>
 
@@ -89,10 +173,12 @@
               <img src="img/suicide-squad.jpg" alt="" />
             </div>
             <div class="top-movie-infor">
-              <span class="like">
-                <i class="far fa-heart"></i><i class="fas fa-heart"></i>427
-              </span>
-              <span class="book">BOOK</span>
+              <a href="#" class="like">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                427
+              </a>
+              <a href="#" class="book">예매</a>
             </div>
           </li>
 
@@ -101,35 +187,39 @@
               <img src="img/jungle-cruise.jpg" alt="" />
             </div>
             <div class="top-movie-infor">
-              <span class="like">
-                <i class="far fa-heart"></i><i class="fas fa-heart"></i>446
-              </span>
-              <span class="book">BOOK</span>
+              <a href="#" class="like">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                446
+              </a>
+              <a href="#" class="book">예매</a>
             </div>
           </li>
         </ul>
 
-        <ul class="bookingHelp">
-          <li class="bookingHelp">
-            <input type="text" placeholder="Enter the movie title" />
-            <a href="#"><i class="fas fa-search"></i></a>
-          </li>
-          <li class="bookingHelp">
-            <a href="#"><i class="far fa-calendar-alt"></i> Time Table</a>
-          </li>
-          <li class="bookingHelp">
-            <a href="#"><i class="fas fa-film"></i>Box Office</a>
-          </li>
-          <li class="bookingHelp">
-            <a href="#"><i class="fas fa-ticket-alt"></i>Go Booking</a>
-          </li>
-        </ul>
+        <nav class="bookingHelp">
+          <ul class="bookingHelp-ul">
+            <li class="bookingHelp-li">
+              <input type="text" placeholder="영화명을 입력해주세요" />
+              <a href="#"><i class="fas fa-search"></i></a> |
+            </li>
+            <li class="bookingHelp-li">
+              <a href="#"><i class="far fa-calendar-alt"></i>상영 시간표</a> |
+            </li>
+            <li class="bookingHelp-li">
+              <a href="#"><i class="fas fa-film"></i>박스오피스</a> |
+            </li>
+            <li class="bookingHelp-li">
+              <a href="#"><i class="fas fa-ticket-alt"></i>빠른 예매</a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
       <div class="movie-service">
         <div class="movie-service-wrapper">
           <div class="movie-service-header">
-            <h2 class="movie-service-head">SERVICES</h2>
+            <h2 class="movie-service-head">혜택</h2>
             <button><i class="fas fa-plus"></i></button>
           </div>
 
@@ -255,14 +345,21 @@
 
           <div class="movie-service-menu">
             <ul class="movie-service-menu-items">
-              <li><a href="#"></a><i class="far fa-gem"></i>VIP LOUNGE</li>
-              <li><a href="#"></a><i class="fas fa-user"></i>MEMBERSHIP</li>
               <li>
-                <a href="#"></a><i class="far fa-credit-card"></i>DISCOUNT &
-                SALE
+                <a href="#"><i class="far fa-gem"></i>VIP LOUNGE</a>
               </li>
-              <li><a href="#"></a><i class="fas fa-gift"></i>EVENTS</li>
-              <li><a href="#"></a><i class="fas fa-beer"></i>STORE</li>
+              <li>
+                <a href="#"><i class="fas fa-user"></i>멤버십</a>
+              </li>
+              <li>
+                <a href="#"><i class="far fa-credit-card"></i>할인카드안내</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-gift"></i>이벤트</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-beer"></i>스토어</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -271,8 +368,8 @@
       <div class="movie-curation">
         <div class="movie-curation-wrapper">
           <div class="movie-curation-header">
-            <h2 class="movie-curation-head">CURATION</h2>
-            <a href="#">See More Curations<i class="fas fa-plus"></i></a>
+            <h2 class="movie-curation-head">큐레이션</h2>
+            <a href="#">큐레이션 더보기<i class="fas fa-plus"></i></a>
           </div>
 
           <div class="movie-curation-contents">
@@ -288,8 +385,8 @@
 
               <div class="movie-curation-sideAds-booking">
                 <ul class="movie-curation-sideAds-booking-more">
-                  <li><a href="#">More Information</a></li>
-                  <li><a href="#">Go Booking</a></li>
+                  <li><a href="#">상세정보</a></li>
+                  <li><a href="#">예매</a></li>
                 </ul>
               </div>
             </div>
@@ -382,7 +479,7 @@
 
       <div class="movie-guide">
         <div class="movie-guide-header">
-          <h2>MEGABOX INFORMATION</h2>
+          <h2>메가박스 안내</h2>
         </div>
 
         <div class="movie-guide-cinemas">
@@ -416,23 +513,25 @@
         <div class="movie-guide-customerServices">
           <ul class="movie-guide-customerServices-items">
             <li>
-              <a href="#"><i class="fas fa-headset"></i>SERVICE CENTER</a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-question-circle"></i>FAQ</a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-people-arrows"></i>ONE-ON-ONE</a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-users"></i>GROUP RESERVATION</a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-box-open"></i>LOST & FOUND</a>
+              <a href="#"><i class="fas fa-headset"></i>고객센터</a>
             </li>
             <li>
               <a href="#"
-                ><i class="fas fa-couch"></i>THE BOUTIQUE PRIVATE RESERVATION</a
+                ><i class="fas fa-question-circle"></i>자주 묻는 질문</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-people-arrows"></i>1:1 문의</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-users"></i>그룹/대관문의</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-box-open"></i> 분실물 문의/접수</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-couch"></i>더 부티크 프라이빗 대관예매</a
               >
             </li>
           </ul>
@@ -450,13 +549,13 @@
       <div class="movie-footer-top">
         <div class="movie-footer-top-wrapper">
           <ul class="movie-footer-otherInfor">
-            <li>회사소개</li>
-            <li>인재채용</li>
-            <li>사회공헌</li>
-            <li>제휴/광고/부대사업문의</li>
-            <li>이용약관</li>
-            <li>개인정보처리방침</li>
-            <li>윤리경영</li>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">인재채용</a></li>
+            <li><a href="#">사회공헌</a></li>
+            <li><a href="#">제휴/광고/부대사업문의</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">윤리경영</a></li>
           </ul>
 
           <button>
