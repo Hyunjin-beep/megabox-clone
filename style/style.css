@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 100px;
+  padding-top: 0px;
+}
+
+.top-header-wrapper,
+.bottom-nav-wrapper {
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+
+.left-nav,
+.right-nav {
+  position: relative;
+}
+
+.left-nav-ul li,
+.right-nav-ul li {
+  float: left;
+  margin-right: 20px;
+}
+
+.left-nav-item,
+.right-nav-item {
+  position: relative;
+  display: inline-block;
+}
+
+right-nav-item-services-wrapper {
+  width: 100%;
+}
+
+.movies__movie,
+.bookings__booking,
+.theathers_theather,
+.events__event,
+.services__service {
+  display: none;
+  list-style: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 500px;
+  border: 1px solid black;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.events__event,
+.services__service {
+  left: -500px;
+}
+
+.left-nav-item:hover .movies__movie {
+  display: block;
+}
+
+.left-nav-item:hover .bookings__booking {
+  display: block;
+}
+
+.left-nav-item:hover .theathers_theather {
+  display: block;
+}
+
+.right-nav-item:hover .events__event {
+  display: block;
+}
+
+.right-nav-item:hover .services__service {
+  display: block;
+}
