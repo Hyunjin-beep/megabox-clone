@@ -233,4 +233,37 @@ a {
 }
 
 /*bookingHelp*/
-.bookingHelp
+.bookingHelp {
+  margin-top: 40px;
+}
+
+.bookingHelp-ul {
+  border: 1px solid salmon;
+  width: 90%;
+  height: 80px;
+  list-style: none;
+  margin: auto;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.bookingHelp-li {
+  font-size: 17px;
+  display: inline;
+  color: white;
+
+  /* margin-left: 20px;
+  margin-right: 20px; */
+}
+
+.bookingHelp-li a {
+  color: white;
+  padding: 20px 30px;
+  /* padding-right: 45px; */
+}
+
+.bookingHelp-li i {
+  margin: auto;
+  /* margin-right: 15px;
+  margin-left: 20px; */
+}
