@@ -191,6 +191,10 @@ a {
   padding-left: 10px;
 }
 
+.moreMovies:hover {
+  text-decoration: underline;
+}
+
 /*top-movies*/
 .top-movies {
   display: flex;
@@ -246,7 +250,7 @@ a {
 .bookingHelp {
   margin-top: 40px;
   height: 80px;
-  background-color: rgba(8, 8, 8, 0.43);
+  background-color: rgba(8, 8, 8, 0.335);
 }
 
 .bookingHelp-ul {
@@ -276,6 +280,10 @@ a {
 
 .bookingHelp-li a {
   color: white;
+}
+
+.bookingHelp-li a:hover {
+  text-decoration: underline;
 }
 
 .bookingHelp-li i {
