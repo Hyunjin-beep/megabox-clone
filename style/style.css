@@ -379,10 +379,12 @@ a {
 }
 
 .movie-service-slideAds {
-  width: 800px;
-  height: 400px;
-  margin-left: 10px;
-  position: relative;
+  border: 1px solid darkgoldenrod;
+  display: flex;
+  width: 100%;
+  height: 50%;
+  /* margin-left: 10px; */
+  /* position: relative; */
 }
 
 .movie-service-slideAds-wrapper {
@@ -391,6 +393,7 @@ a {
 
 .movie-service-slideAd-item {
   transition: all 0.3s ease;
+  display: flex;
 }
 
 .movie-service-slideAd-item .main {
@@ -400,4 +403,51 @@ a {
 .others {
   position: absolute;
   display: none;
+}
+
+.movie-service-slideAds-slideBar {
+  display: flex;
+  transform: translateY(-250px);
+}
+
+.imgLeft {
+  position: relative;
+  border: 1px solid red;
+}
+
+.imgRight {
+  border: 1px solid black;
+}
+
+.movie-service-brandAds-side {
+  float: right;
+}
+
+.movie-service-brandAds-side .img {
+  width: 100%;
+}
+
+.caption-slide {
+  margin-right: 15px;
+}
+
+.caption-slide div {
+  display: inline-block;
+  height: 2px;
+  width: 20px;
+  margin-bottom: 5px;
+  border: 1px solid red;
+}
+
+.slide-button button {
+  border: transparent;
+  background: transparent;
+  outline: transparent;
+  color: rgb(86, 57, 153);
+}
+
+.slide-button .fa-caret-right {
+  border: 1px solid burlywood;
+  font-size: 18px;
+  top: 10px;
 }
