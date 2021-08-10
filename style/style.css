@@ -424,7 +424,14 @@ a {
   display: inline-block;
   width: 20px;
   margin-bottom: 4px;
-  border: 1px solid red;
+}
+
+.caption-others {
+  border: 1px solid gray;
+}
+
+.caption-main {
+  border: 1px solid purple;
 }
 
 .slide-button button {
