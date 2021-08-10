@@ -135,6 +135,10 @@ a {
   display: block;
 }
 
+.movie-contents {
+  position: relative;
+}
+
 /* movie infor*/
 .movie-infor {
   height: 100vh;
@@ -345,9 +349,8 @@ a {
 
 /*movie-service*/
 .movie-service {
-  border: 1px solid black;
   height: 100%;
-  padding: 10px 221px 0 221px;
+  padding: 10px 200px 0 221px;
 }
 
 .movie-service-wrapper {
@@ -369,7 +372,6 @@ a {
   border: transparent;
   background: transparent;
   outline-color: transparent;
-  transform: translateX(-10px);
   font-size: 20px;
 }
 
@@ -411,7 +413,7 @@ a {
 
 .movie-service-brandAds-side {
   float: right;
-  transform: translateX(-30px);
+  /* transform: translateX(-15px); */
 }
 
 .caption-slide {
@@ -444,12 +446,73 @@ a {
 }
 
 .movie-service-brandAds {
-  border: 2px solid rebeccapurple;
   width: 100%;
-  transform: translateY(-225px);
+  transform: translate(5px, -225px);
+  align-items: baseline;
 }
 
-.movie-service-brandAds .img {
-  max-width: 40%;
-  height: auto;
+.movie-service-brandAds .brandAds-left {
+  border-radius: 2%;
+  width: 40%;
+  margin-right: 15px;
+  box-shadow: 10px 5px 5px rgb(0 0 0 / 15%);
+}
+
+.movie-service-brandAds .brandAds-right {
+  border-radius: 3%;
+  width: 200px;
+  box-shadow: 10px 5px 5px rgb(0 0 0 / 15%);
+}
+
+/* movie-service-menu */
+.movie-service-menu {
+  height: 50vh;
+  transform: translateY(-330px);
+}
+
+.movie-service-menu-items {
+  list-style: none;
+  text-decoration: none;
+}
+
+.movie-service-menu-items li {
+  margin-top: 150px;
+  height: 50px;
+  width: 20%;
+  font-size: 15px;
+
+  float: left;
+  line-height: 50px;
+  text-align: center;
+}
+
+.movie-service-menu-items li a {
+  display: flex;
+  flex-direction: column;
+  color: rgb(214, 214, 214);
+}
+
+.movie-service-menu-items li a i {
+  font-size: 45px;
+}
+
+.movie-service-menu-background {
+  background-color: #503396;
+  height: 50vh;
+  transform: translateY(-690px);
+}
+
+/* movie-servie */
+
+.item:nth-child(2) {
+  position: relative;
+  z-index: 2;
+  border: 4px solid bisque;
+}
+
+/* movie-service-menu */
+
+.item:nth-child(1) {
+  z-index: 1;
+  transform: translateY(500px);
 }
