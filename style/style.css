@@ -535,6 +535,10 @@ a {
   font-size: 15px;
 }
 
+.movie-curation-seeMore:hover {
+  text-decoration: underline;
+}
+
 .movie-curation-seeMore i {
   font-size: 20px;
   margin-left: 10px;
@@ -603,25 +607,51 @@ a {
   align-items: baseline;
 }
 
-.movie-curation-sideAds-booking li a {
+.movie-curation-sideAds-booking-btnFirst {
+  border: 2px solid rgb(241, 241, 241);
+  background: transparent;
+  padding: 6px 25px;
+  border-radius: 3%;
+}
+
+.movie-curation-sideAds-booking-btnFirst a {
+  font-size: 20px;
+  color: white;
+}
+
+.movie-curation-sideAds-booking-btnSecond {
+  position: relative;
+  left: 14px;
+
+  border: transparent;
+  background: rgb(3, 123, 148);
+  padding: 7px 49px;
+}
+
+.movie-curation-sideAds-booking-btnSecond a {
+  font-size: 20px;
+  color: white;
+}
+
+/* .movie-curation-sideAds-booking li a {
   font-size: 20px;
   color: white;
   font-weight: 500;
-}
+} */
 
-.movie-curation-sideAds-booking .first {
+/* .movie-curation-sideAds-booking .first {
   border: 2px solid rgb(241, 241, 241);
   border-radius: 4%;
-}
+} */
 
-.movie-curation-sideAds-booking .second {
+/* .movie-curation-sideAds-booking .second {
   position: relative;
   left: 15px;
 
   padding: 2px;
   border-radius: 4%;
   background-color: rgb(3, 123, 148);
-}
+} */
 
 .movie-curation-mainContent {
   position: relative;
@@ -682,6 +712,10 @@ a {
 
 .movie-curation-mainContent-items-selection-red {
   background-color: rgb(177, 63, 49);
+}
+
+.movie-curation-mainContent-items-selection a {
+  color: white;
 }
 
 .movie-curation-mainContent-items-title {
