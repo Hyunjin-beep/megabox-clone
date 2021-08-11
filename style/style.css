@@ -509,17 +509,15 @@ a {
 
 /*movie-curation*/
 .movie-curation {
-  border: 3px solid blueviolet;
   transform: translateY(-320px);
   background-color: rgb(37, 36, 81);
 }
 
 .movie-curation-wrapper {
-  padding: 10px 200px 0 221px;
+  padding: 10px 200px 100px 221px;
 }
 
 .movie-curation-header {
-  border: 3px solid white;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -528,6 +526,180 @@ a {
 
 .movie-curation-head {
   color: white;
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 500;
+}
+
+.movie-curation-seeMore {
+  color: rgb(182, 181, 181);
+  font-size: 15px;
+}
+
+.movie-curation-seeMore i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.movie-curation-contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -30px;
+}
+
+.movie-curation-sideAds {
+  padding-right: 45px;
+}
+
+.movie-curation-sideAds-selection {
+  position: relative;
+  z-index: 1;
+
+  width: 36%;
+  height: 100%;
+
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-top: 10px;
+
+  transform: translateY(20px);
+
+  color: rgb(226, 225, 225);
+  font-family: Helvetica;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: rgb(50, 98, 127);
+  border-radius: 0 0 70% 70%;
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 40%);
+}
+
+.movie-curation-sideAds-img-img {
+  position: relative;
+  bottom: 80px;
+  left: 25px;
+}
+
+.movie-curation-sideAds-img-img img {
+  border-radius: 3%;
+}
+
+.movie-curation-sideAds-booking {
+  position: relative;
+  bottom: 80px;
+  left: 10px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.movie-curation-sideAds-booking-more {
+  list-style: none;
+}
+
+.movie-curation-sideAds-booking li {
+  float: left;
+  width: 50%;
+  line-height: 40px;
+  text-align: center;
+  align-items: baseline;
+}
+
+.movie-curation-sideAds-booking li a {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.movie-curation-sideAds-booking .first {
+  border: 2px solid rgb(241, 241, 241);
+  border-radius: 4%;
+}
+
+.movie-curation-sideAds-booking .second {
+  position: relative;
+  left: 15px;
+
+  padding: 2px;
+  border-radius: 4%;
+  background-color: rgb(3, 123, 148);
+}
+
+.movie-curation-mainContent {
+  position: relative;
+  width: 65%;
+  margin-top: 30px;
+  color: white;
+}
+
+.movie-curation-mainContent-header {
+  border-bottom: 1px solid rgb(70, 69, 128);
+  padding-bottom: 30px;
+}
+
+.movie-curation-mainContent-header .hashtags {
+  list-style: none;
+}
+
+.movie-curation-mainContent-header .hashtags li {
+  font-size: 20px;
+}
+
+.movie-curation-mainContent-header h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.7rem;
+  padding-right: 65px;
+}
+
+.movie-curation-mainContent-explanation {
+  margin-top: 15px;
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.movie-curation-mainContent-items {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-curation-mainContent-items-selection {
+  position: relative;
+  z-index: 1;
+
+  width: 20%;
+
+  padding-top: 7px;
+  padding-bottom: 7px;
+  transform: translate(12px, 35px);
+
+  font-family: Helvetica;
+  font-weight: 700;
+  font-size: 22px;
+  background-color: rgb(50, 98, 127);
+  text-align: center;
+  border-radius: 0 0 60% 60%;
+}
+
+.movie-curation-mainContent-items-selection-red {
+  background-color: rgb(177, 63, 49);
+}
+
+.movie-curation-mainContent-items-title {
+  margin-top: 5px;
+  color: white;
+  font-size: 15px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.movie-curation-mainContent-items-title a {
+  text-align: center;
+  line-height: 28px;
+}
+
+.movie-curation-mainContent-items-img img {
+  border-radius: 5%;
 }
