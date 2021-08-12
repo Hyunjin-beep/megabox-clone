@@ -737,3 +737,155 @@ a {
 .movie-curation-mainContent-items-img img {
   border-radius: 5%;
 }
+
+/*movie-guide*/
+.movie-guide {
+  transform: translateY(-320px);
+}
+
+.movie-guide-wrapper {
+  padding: 10px 200px 10px 221px;
+}
+
+.movie-guide-header {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.movie-guide-head {
+  font-size: 27px;
+  font-weight: 700;
+  color: rgb(44, 47, 102);
+}
+
+.movie-guide-cinemas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.movie-guide-cinemas-item {
+  border: transparent;
+  background: transparent;
+  outline: transparent;
+}
+
+.movie-guide-cinemas-item img {
+  width: 125%;
+  border-radius: 10%;
+}
+
+.movie-guide-notices {
+  border-top: 1px solid rgba(8, 8, 8, 0.13);
+  border-bottom: 1px solid rgba(8, 8, 8, 0.13);
+}
+
+.movie-guide-notices-wrapper {
+  padding: 20px 200px 20px 221px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.movie-guide-notices-partFirst,
+.movie-guide-notices-partSecond {
+  display: flex;
+  align-items: baseline;
+}
+
+.movie-guide-notices-partFirst {
+  position: relative;
+  right: 20px;
+}
+
+.movie-guide-notices-partFirst p,
+.movie-guide-notices-partSecond p {
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0px 20px;
+}
+
+.movie-guide-notices-partFirst-notice::before,
+.movie-guide-notices-partSecond-seeMore::before {
+  content: "";
+  position: absolute;
+  transform: translate(-20px, 3px);
+  width: 1px;
+  height: 15px;
+  background-color: rgba(8, 8, 8, 0.335);
+}
+
+.movie-guide-notices-partFirst-notice a,
+.movie-guide-notices-partSecond a {
+  color: black;
+}
+
+.movie-guide-notices-partFirst-notice a:hover,
+.movie-guide-notices-partSecond-seeMore a:hover {
+  text-decoration: underline;
+}
+
+.movie-guide-notices-partSecond-seeMore i {
+  margin-left: 10px;
+  color: rgba(8, 8, 8, 0.335);
+}
+
+.movie-guide-customerServices {
+  padding: 65px 200px;
+
+  height: 35vh;
+}
+
+.movie-guide-customerServices-items {
+  list-style: none;
+}
+
+.movie-guide-customerServices-items li {
+  float: left;
+  width: 16%;
+  text-align: center;
+  padding-left: 4em;
+}
+
+.movie-guide-customerServices-items li a {
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.movie-guide-customerServices-items li a i {
+  font-size: 45px;
+  margin-bottom: 10px;
+  color: rgb(100, 194, 204);
+}
+
+.movie-guide-customerServices-items li p {
+  font-size: 15px;
+}
+
+.movie-guide-customerServices-items li:last-child a p {
+  width: max-content;
+}
+
+.movie-guide-customerServices-items li p:hover {
+  text-decoration: underline;
+}
+
+.movie-guide-customerServices-items li a i:hover + p {
+  text-decoration: underline;
+}
+
+/*movie-ad*/
+.movie-ad {
+  transform: translateY(-320px);
+}
+
+.movie-ad-item {
+  padding: 0px 200px;
+  background: rgb(79, 121, 169);
+}
+
+.movie-ad-item img {
+  display: block;
+}
