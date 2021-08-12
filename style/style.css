@@ -20,9 +20,13 @@ a {
 }
 
 .logo {
-  /* margin-top: 4px;
-  margin-right: 90px; */
-  align-self: center;
+  width: 150px;
+  height: 55px;
+  display: block;
+  margin-right: 20px;
+  margin-top: 10px;
+  background: url(https://img.megabox.co.kr/static/pc/images/common/ci/logo-white_new.png)
+    no-repeat;
 }
 
 .logo img {
