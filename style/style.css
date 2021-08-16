@@ -912,6 +912,11 @@ a {
 .movie-guide-cinemas-item img {
   width: 125%;
   border-radius: 10%;
+  filter: grayscale(100%);
+}
+
+.movie-guide-cinemas-item img:hover {
+  filter: grayscale(0%);
 }
 
 .movie-guide-notices {
