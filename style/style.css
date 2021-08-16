@@ -321,19 +321,19 @@ a {
   display: block;
 } */
 
-.moga-li:hover .moga {
+.moga-img:hover + .moga {
   display: block;
 }
 
-.boss-li:hover .boss {
+.boss-img:hover + .boss {
   display: block;
 }
 
-.suicide-li:hover .suicide {
+.suicide-img:hover + .suicide {
   display: block;
 }
 
-.jungle-li:hover .jungle {
+.jungle-img:hover + .jungle {
   display: block;
 }
 
