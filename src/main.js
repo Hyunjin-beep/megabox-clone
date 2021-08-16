@@ -12,15 +12,31 @@ const captionBar = document.querySelector(".caption-slide").children;
 const totalCaptionBar = captionBar.length;
 let captionBarIndex = 0;
 
+const play = document.querySelector(".playAdsSlide");
+let playStatus = false;
+
+let imgTest;
+
 caption.innerText = `1/ 9`;
 
 prev.addEventListener("click", () => {
   nextImage("prev");
+  chnageIcon();
 });
 
 next.addEventListener("click", () => {
   nextImage("next");
+  chnageIcon();
 });
+
+function chnageIcon() {
+  if (playStatus === true) {
+    clearInterval(imgTest);
+    play.innerHTML = '<i class="fas fa-caret-right"></i>';
+    playStatus = false;
+    console.log(playStatus);
+  }
+}
 
 function nextImage(direction) {
   if (direction == "next") {
@@ -45,26 +61,28 @@ function nextImage(direction) {
     ads[index].classList.add("main");
     ads[index].classList.remove("others");
 
+    captionBar[i].classList.remove("caption-main");
+    captionBar[i].classList.add("caption-others");
+
+    captionBar[index].classList.add("caption-main");
+    captionBar[index].classList.remove("caption-others");
+
     caption.innerText = `${index + 1}/ 9`;
   }
 }
-
-const play = document.querySelector(".playAdsSlide");
-let playStatus = false;
 
 play.addEventListener("click", () => {
   playImgAutomatically();
 });
 
 function playImgAutomatically() {
-  let imgTest;
   if (playStatus === false) {
     play.innerHTML = '<i class="fas fa-pause"></i>';
     playStatus = true;
 
     imgTest = setInterval(function () {
       nextImage("next");
-    }, 4000);
+    }, 6000);
   } else {
     play.innerHTML = '<i class="fas fa-caret-right"></i>';
     playStatus = false;
