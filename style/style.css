@@ -305,12 +305,55 @@ a {
 .top-movie {
   align-items: center;
   padding-right: 10px;
+  position: relative;
+}
+
+.top-movie-img {
 }
 
 .top-movie-img img {
   width: 220px;
   height: 300px;
   border-radius: 2%;
+}
+
+/* .top-movies:hover .top-movie-img-infor {
+  display: block;
+} */
+
+.moga-li:hover .moga {
+  display: block;
+}
+
+.boss-li:hover .boss {
+  display: block;
+}
+
+.suicide-li:hover .suicide {
+  display: block;
+}
+
+.jungle-li:hover .jungle {
+  display: block;
+}
+
+.top-movie-img-infor {
+  display: none;
+  position: absolute;
+  width: 220px;
+  height: 300px;
+  border-radius: 2%;
+  background-color: rgba(5, 5, 5, 0.637);
+  word-break: break-all;
+
+  transform: translateY(-304px);
+}
+
+.top-movie-img-infor p {
+  display: flex;
+  color: white;
+  padding: 15px;
+  font-size: 14px;
 }
 
 .top-movie-infor {
