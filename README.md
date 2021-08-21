@@ -1,5 +1,6 @@
-# TITLE: Where is Wally
-### URL: https://hyunjin-beep.github.io/--where-is-wally/
+# TITLE: megabox-clone
+### URL: N/A
+### Reference Site: https://www.megabox.co.kr/
 # Languages: HTML, CSS, JavaScript
 
 
